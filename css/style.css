@@ -1,0 +1,578 @@
+@charset "utf-8";
+
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+body {
+    background: #888;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* ヘッダー */
+.header {
+    position: relative;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.51%;
+    padding-right: 6.53%;
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ％出す時は作りたいサイズに対して写真のサイズを確認して割る */
+
+.logo {
+    width: 226.7px;
+}
+
+.pc-nav ul {
+    display: flex;
+}
+
+.pc-nav ul li {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    width: 105px;
+    margin-right: 54px;
+    text-align: center;
+}
+
+.pc-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.slider img {
+    width: 100%;
+}
+
+/* メイン */
+main {
+    background-color: #E8D9BF;
+    height: 3037px;
+}
+
+.semi-title {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 105px;
+}
+
+.title {
+    text-align: center;
+    font-size: 82px;
+    margin-top: 70px;
+    line-height: 1.171;
+    letter-spacing: 0.1em;
+}
+
+.semi-title2 {
+    text-align: center;
+    font-size: 23px;
+    margin-top: 55px;
+    letter-spacing: 0.1em;
+    line-height: 1.652;
+}
+
+.section_aboutus {
+    width: 1000px;
+    height: 560px;
+    padding-top: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.latte {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.latte img {
+    border-radius: 0 0 70px 0;
+}
+
+.container {
+    width: 50%;
+    padding-top: 70px;
+    padding-left: 80px;
+}
+
+.about_us {
+    width: 54.4%;
+}
+
+.semi-title3 {
+    font-size: 44px;
+    line-height: 1.386;
+    margin-top: 60px;
+}
+
+.box {
+    width: 410px
+}
+
+.message {
+    font-size: 16px;
+    margin-top: 35px;
+}
+
+
+.section_menu {
+    width: 1000px;
+    height: 425px;
+    margin: auto;
+}
+
+.MENU {
+    width: 151px;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+.photos {
+    width: 30%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.photos img {
+    border-radius: 0 50px 0 0;
+}
+
+.drink,
+.food {
+    margin-right: 50px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    font-size: 38px;
+    margin-top: -15px;
+    margin-left: 10px;
+    margin-right: 250px;
+    color: #D30202;
+
+}
+
+.menu li :last-child {
+    margin-right: 0;
+}
+
+.wrapper {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2 {
+    width: 300px;
+    padding-top: 20px;
+}
+
+.message2 {
+    font-size: 17px;
+    line-height: 1.471;
+}
+
+.section_gallery {
+    margin: auto;
+    margin-top: 95px;
+}
+
+.GALLERY {
+    width: 245px;
+    margin: auto;
+}
+
+.square {
+    background-color: dimgray;
+    width: 100%;
+    height: 300px;
+    margin-top: 25px;
+}
+
+.section_event {
+    margin: auto;
+    margin-top: 65px;
+}
+
+.EVENT {
+    margin: auto;
+    width: 174px;
+}
+
+.event_menu {
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+    background-color: #fff;
+    border: solid 3.68px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.day {
+    font-size: 23px;
+    position: absolute;
+    top: 40px;
+    left: 160px;
+}
+
+.day2 {
+    font-size: 23px;
+    position: absolute;
+    top: 85px;
+    left: 160px;
+}
+
+
+.day3 {
+    font-size: 23px;
+    position: absolute;
+    top: 130px;
+    left: 160px;
+}
+
+.announce {
+    font-size: 23px;
+    position: absolute;
+    left: 320px;
+    top: 40px;
+    border-bottom: 1px solid #4f260b;
+}
+
+.announce2 {
+    font-size: 23px;
+    position: absolute;
+    left: 320px;
+    top: 85px;
+    border-bottom: 1px solid #4f260b;
+}
+
+.announce3 {
+    font-size: 23px;
+    position: absolute;
+    left: 320px;
+    top: 130px;
+    border-bottom: 1px solid #4f260b;
+}
+
+.section_access {
+    margin: auto;
+    margin-top: 95px;
+}
+
+.ACCESS {
+    width: 214px;
+    margin: auto;
+}
+
+.map {
+    width: 100%;
+    height: 471px;
+    margin-top: 45px;
+}
+
+.footer {
+    background-color: #fff;
+    position: relative;
+    height: 393px
+}
+
+.wrapper2 {
+    padding-top: 83px;
+    padding-left: 25.5%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_logo {
+    width: 226px;
+}
+
+.news {
+    font-size: 20px;
+    line-height: 1.95;
+    margin-left: 65px;
+}
+
+.DESIGN_CAFE {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 300px;
+}
+
+.toTop {
+    position: fixed;
+    width: 125px;
+    right: 20px;
+    bottom: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* .section1 {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.photo1 {
+    width: 50%;
+    height: 560px;
+    box-sizing: border-box;
+
+}
+
+.photo1 img {
+    border-radius: 0 0 70px 0;
+
+}
+
+.about-us {
+    display: block;
+    width: 50%;
+    margin-top: 70px;
+    margin-left: 80px;
+}
+
+.photo2 {
+    width: 272px;
+    height: 77px;
+}
+
+.semi-title3 {
+    font-size: 44px;
+    line-height: 1.386;
+    margin-top: 60px;
+}
+
+.box {
+    width: 410px;
+    height: 205px;
+}
+
+.message {
+    text-wrap: wrap;
+    font-size: 16px;
+    margin-top: 35px;
+}
+
+.section2 {
+    width: 1000px;
+    margin: auto;
+}
+
+.photo3 {
+    width: 151px;
+    height: 78px;
+    margin: auto;
+    margin-top: 105px;
+}
+
+.photos {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.photos img {
+    border-radius: 0 50px 0 0;
+}
+
+.drink,
+.food {
+    margin-right: 50px;
+}
+
+.menu {
+    width: 810px;
+    display: flex;
+}
+
+.menu li {
+    color: #D30202;
+    font-size: 38px;
+    margin-top: -15px;
+    margin-left: 10px;
+    margin-right: 250px;
+}
+
+.wrapper {
+    width: 1000px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2 {
+    width: 300px;
+    padding-top: 15px;
+}
+
+.message2 {
+    font-size: 17px;
+    line-height: 1.471;
+}
+
+.photo4 {
+    width: 245px;
+    height: 78px;
+    margin: auto;
+    margin-top: 95px;
+}
+
+.square {
+    background-color: dimgray;
+    width: 100%;
+    height: 300px;
+    margin-top: 25px;
+}
+
+.photo5 {
+    width: 175px;
+    height: 78px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.event {
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+    background-color: #fff;
+    border: solid 3.68px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.day {
+    font-size: 23px;
+    position: absolute;
+    top: 40px;
+    left: 160px;
+}
+
+.day2 {
+    font-size: 23px;
+    position: absolute;
+    top: 85px;
+    left: 160px;
+}
+
+
+.day3 {
+    font-size: 23px;
+    position: absolute;
+    top: 130px;
+    left: 160px;
+}
+
+.announce {
+    font-size: 23px;
+    position: absolute;
+    left: 320px;
+    top: 40px;
+    border-bottom: 1px solid #4f260b;
+}
+
+.announce2 {
+    font-size: 23px;
+    position: absolute;
+    left: 320px;
+    top: 85px;
+    border-bottom: 1px solid #4f260b;
+}
+
+.announce3 {
+    font-size: 23px;
+    position: absolute;
+    left: 320px;
+    top: 130px;
+    border-bottom: 1px solid #4f260b;
+}
+
+.photo6 {
+    width: 214px;
+    height: 78px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.map {
+    margin: auto;
+}
+
+iframe {
+    width: 1000px;
+    height: 471px;
+} */
