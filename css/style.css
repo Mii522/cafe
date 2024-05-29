@@ -14,7 +14,8 @@ li,
 p,
 dl,
 dt,
-dd {
+dd,
+span {
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -46,12 +47,6 @@ img {
     max-width: 100%;
     vertical-align: bottom;
     border: none;
-}
-
-body {
-    background: #888;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 /* ヘッダー */
@@ -102,10 +97,20 @@ body {
     width: 100%;
 }
 
+.slider source {
+    width: 100%;
+}
+
+/* スマホメニュー　PC版では消す */
+.sp-nav,
+.hamburger {
+    display: none;
+}
+
+
 /* メイン */
 main {
     background-color: #E8D9BF;
-    height: 3037px;
 }
 
 .semi-title {
@@ -130,10 +135,15 @@ main {
     line-height: 1.652;
 }
 
+.sp-semi-title2 {
+    display: none;
+}
+
 .section_aboutus {
-    width: 1000px;
-    height: 560px;
+    max-width: 1000px;
     padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -150,33 +160,35 @@ main {
 
 .container {
     width: 50%;
-    padding-top: 70px;
+    padding-top: 55px;
     padding-left: 80px;
+    padding-right: 10px;
 }
 
 .about_us {
-    width: 54.4%;
+    width: 272px;
 }
 
 .semi-title3 {
     font-size: 44px;
     line-height: 1.386;
-    margin-top: 60px;
-}
-
-.box {
-    width: 410px
+    margin-top: 45px;
 }
 
 .message {
     font-size: 16px;
-    margin-top: 35px;
+    margin-top: 20px;
+    line-height: 1.625;
+}
+
+.sp-about_us,
+.sp-container {
+    display: none;
 }
 
 
 .section_menu {
-    width: 1000px;
-    height: 425px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -187,70 +199,45 @@ main {
 
 }
 
-.photos {
-    width: 30%;
-    margin-top: 35px;
+.section_menu ul {
     display: flex;
     justify-content: space-between;
+    margin-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.photos img {
+
+.section_menu ul li {
+    width: 30%;
+}
+
+.section_menu ul img {
     border-radius: 0 50px 0 0;
 }
 
-.drink,
-.food {
-    margin-right: 50px;
-}
-
-.menu {
-    display: flex;
-}
-
-.menu li {
+.li_menu {
     font-size: 38px;
     margin-top: -15px;
-    margin-left: 10px;
-    margin-right: 250px;
     color: #D30202;
-
-}
-
-.menu li :last-child {
-    margin-right: 0;
-}
-
-.wrapper {
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.box2 {
-    width: 300px;
-    padding-top: 20px;
+    margin-left: 10px;
 }
 
 .message2 {
     font-size: 17px;
     line-height: 1.471;
+    margin-top: 15px;
 }
+
 
 .section_gallery {
     margin: auto;
-    margin-top: 95px;
+    margin-top: 100px;
 }
 
 .GALLERY {
     width: 245px;
     margin: auto;
-}
-
-.square {
-    background-color: dimgray;
-    width: 100%;
-    height: 300px;
-    margin-top: 25px;
 }
 
 .section_event {
@@ -264,59 +251,37 @@ main {
 }
 
 .event_menu {
-    width: 1000px;
-    height: 200px;
+    max-width: 1000px;
     margin: auto;
     background-color: #fff;
     border: solid 3.68px;
-    position: relative;
     margin-top: 40px;
-}
-
-.day {
-    font-size: 23px;
-    position: absolute;
-    top: 40px;
-    left: 160px;
-}
-
-.day2 {
-    font-size: 23px;
-    position: absolute;
-    top: 85px;
-    left: 160px;
-}
-
-
-.day3 {
-    font-size: 23px;
-    position: absolute;
-    top: 130px;
-    left: 160px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 
 .announce {
-    font-size: 23px;
-    position: absolute;
-    left: 320px;
-    top: 40px;
-    border-bottom: 1px solid #4f260b;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 160px;
 }
 
-.announce2 {
+
+.announce p {
+    line-height: 1.96;
     font-size: 23px;
-    position: absolute;
-    left: 320px;
-    top: 85px;
-    border-bottom: 1px solid #4f260b;
 }
 
-.announce3 {
-    font-size: 23px;
-    position: absolute;
-    left: 320px;
-    top: 130px;
-    border-bottom: 1px solid #4f260b;
+.announce p span {
+    text-decoration-line: underline;
+    padding-left: 55px;
+}
+
+.sp-announce {
+    display: none;
 }
 
 .section_access {
@@ -329,24 +294,25 @@ main {
     margin: auto;
 }
 
-.map {
+iframe {
     width: 100%;
     height: 471px;
     margin-top: 45px;
+    vertical-align: bottom;
 }
+
+/* フッター */
 
 .footer {
     background-color: #fff;
     position: relative;
-    height: 393px
 }
 
 .wrapper2 {
     padding-top: 83px;
-    padding-left: 25.5%;
-    position: absolute;
     display: flex;
-    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .footer_logo {
@@ -362,7 +328,8 @@ main {
 .DESIGN_CAFE {
     font-size: 16px;
     text-align: center;
-    padding-top: 300px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .toTop {
@@ -376,203 +343,288 @@ html {
     scroll-behavior: smooth;
 }
 
-/* .section1 {
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    padding-top: 100px;
-}
 
-.photo1 {
-    width: 50%;
-    height: 560px;
-    box-sizing: border-box;
+@media screen and (max-width: 1100px) {
+    .pc-nav {
+        display: none;
+    }
 
-}
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        height: 33px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 9999;
+    }
 
-.photo1 img {
-    border-radius: 0 0 70px 0;
+    .hamburger span {
+        height: 2px;
+        width: 33px;
+        background: #fff;
+        display: block;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
 
-}
+    .hamburger span::before,
+    .hamburger span::after {
+        content: "";
+        height: 2px;
+        width: 33px;
+        background: #fff;
+        display: block;
+        position: relative;
+        position: absolute;
+        transition: 0.3s;
+    }
 
-.about-us {
-    display: block;
-    width: 50%;
-    margin-top: 70px;
-    margin-left: 80px;
-}
+    .hamburger span::before {
+        bottom: 10px;
+    }
 
-.photo2 {
-    width: 272px;
-    height: 77px;
-}
+    .hamburger span::after {
+        top: 10px;
+    }
 
-.semi-title3 {
-    font-size: 44px;
-    line-height: 1.386;
-    margin-top: 60px;
-}
+    .open span {
+        background: transparent;
+    }
 
-.box {
-    width: 410px;
-    height: 205px;
-}
+    .open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
 
-.message {
-    text-wrap: wrap;
-    font-size: 16px;
-    margin-top: 35px;
-}
+    .open span::after {
+        top: 0;
+        transform: rotate(135deg);
+    }
 
-.section2 {
-    width: 1000px;
-    margin: auto;
-}
+    .sp-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+    }
 
-.photo3 {
-    width: 151px;
-    height: 78px;
-    margin: auto;
-    margin-top: 105px;
-}
+    .sp-nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.photos {
-    width: 300px;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
+    .sp-nav ul li {
+        color: #fff;
+        padding: 10px 0;
+        font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+            "ＭＳ 明朝", serif;
+        text-align: center;
+        font-size: 18px;
+    }
 
-.photos img {
-    border-radius: 0 50px 0 0;
-}
+    .semi-title {
+        font-size: 36px;
+    }
 
-.drink,
-.food {
-    margin-right: 50px;
-}
+    .title {
+        font-size: 85px;
+        letter-spacing: normal;
+    }
 
-.menu {
-    width: 810px;
-    display: flex;
-}
+    .semi-title2 {
+        font-size: 24px;
+    }
 
-.menu li {
-    color: #D30202;
-    font-size: 38px;
-    margin-top: -15px;
-    margin-left: 10px;
-    margin-right: 250px;
-}
-
-.wrapper {
-    width: 1000px;
-    height: 65px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.box2 {
-    width: 300px;
-    padding-top: 15px;
-}
-
-.message2 {
-    font-size: 17px;
-    line-height: 1.471;
-}
-
-.photo4 {
-    width: 245px;
-    height: 78px;
-    margin: auto;
-    margin-top: 95px;
-}
-
-.square {
-    background-color: dimgray;
-    width: 100%;
-    height: 300px;
-    margin-top: 25px;
-}
-
-.photo5 {
-    width: 175px;
-    height: 78px;
-    margin: auto;
-    margin-top: 70px;
-}
-
-.event {
-    width: 1000px;
-    height: 200px;
-    margin: auto;
-    background-color: #fff;
-    border: solid 3.68px;
-    position: relative;
-    margin-top: 40px;
-}
-
-.day {
-    font-size: 23px;
-    position: absolute;
-    top: 40px;
-    left: 160px;
-}
-
-.day2 {
-    font-size: 23px;
-    position: absolute;
-    top: 85px;
-    left: 160px;
+    .sp-semi-title2 {
+        display: none;
+    }
 }
 
 
-.day3 {
-    font-size: 23px;
-    position: absolute;
-    top: 130px;
-    left: 160px;
-}
 
-.announce {
-    font-size: 23px;
-    position: absolute;
-    left: 320px;
-    top: 40px;
-    border-bottom: 1px solid #4f260b;
-}
+@media screen and (max-width: 767px) {
 
-.announce2 {
-    font-size: 23px;
-    position: absolute;
-    left: 320px;
-    top: 85px;
-    border-bottom: 1px solid #4f260b;
-}
+    .semi-title {
+        font-size: 4.533vw;
+    }
 
-.announce3 {
-    font-size: 23px;
-    position: absolute;
-    left: 320px;
-    top: 130px;
-    border-bottom: 1px solid #4f260b;
-}
+    .title {
+        font-size: 10.133vw;
+    }
 
-.photo6 {
-    width: 214px;
-    height: 78px;
-    margin: auto;
-    margin-top: 80px;
-}
+    .semi-title2 {
+        display: none;
+    }
 
-.map {
-    margin: auto;
-}
+    .sp-semi-title2 {
+        display: block;
+        font-size: 4.267vw;
+        line-height: 1.875;
+        text-align: center;
+        margin-top: 30px;
+        letter-spacing: 0.1em;
+    }
 
-iframe {
-    width: 1000px;
-    height: 471px;
-} */
+    .latte {
+        width: 100%;
+    }
+
+    .latte img {
+        border-radius: 0 0 0 0;
+        margin-top: 10px;
+    }
+
+    .section_aboutus {
+        flex-direction: column;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 65px;
+    }
+
+    .about_us {
+        display: none;
+    }
+
+    .sp-about_us {
+        display: block;
+        width: 47.9%;
+        margin: auto;
+
+    }
+
+    .container {
+        display: none;
+    }
+
+    .sp-container {
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    .semi-title3 {
+        display: block;
+        line-height: 1.25;
+        font-size: 36px;
+    }
+
+    .box {
+        margin: auto;
+    }
+
+    .message {
+        line-height: 1.75;
+        font-size: 16px;
+    }
+
+    .MENU {
+        width: 23.3%;
+        margin-top: 50px;
+    }
+
+    .section_menu ul {
+        flex-direction: column;
+        /* margin-top: 20px; */
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .section_menu ul li {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+
+    .section_menu ul li :last-child {
+        padding-bottom: 0;
+    }
+
+    .GALLERY {
+        width: 37.9%;
+        margin-top: 30px;
+    }
+
+    .EVENT {
+        width: 26.7%;
+    }
+
+    .event_menu {
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .announce {
+        display: none;
+    }
+
+    .sp-announce {
+        display: block;
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+
+    .sp-announce p {
+        font-size: 16px;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+
+    .sp-announce p span {
+        text-decoration: underline;
+    }
+
+    .section_access {
+        margin-top: 30px;
+    }
+
+    .ACCESS {
+        width: 33.1%;
+    }
+
+    iframe {
+        height: 190px;
+        margin-top: 10px;
+    }
+
+    .footer_logo {
+        width: 60.3%;
+        margin-left: 20px;
+    }
+
+    .wrapper2 {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .news {
+        font-size: 18px;
+        line-height: 1.72;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .DESIGN_CAFE {
+        padding-top: 45px;
+        padding-bottom: 30px;
+    }
+
+    .toTop {
+        position: fixed;
+        width: 100px;
+        bottom: 200px;
+        right: 10px;
+    }
+}
