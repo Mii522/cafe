@@ -262,24 +262,26 @@ main {
     margin-top: 25px;
 }
 
-.slick-arrow {
-    z-index: 100;
+.slide-arrow {
+    cursor: pointer;
+    margin: auto;
     width: 40px;
-    height: 40px
+    height: 40px;
+    z-index: 100;
 }
 
-.slick-prev:before,
-.slick-next:before {
-    color: white;
+.slide-arrow next-arrow slick-arrow {
+    color: #fff;
+    position: absolute;
+    right: 420px;
 }
 
-.slick-prev {
+.slide-arrow prev-arrow slick-arrow {
+    color: #fff;
+    position: absolute;
     left: 420px;
 }
 
-.slick-next {
-    right: 420px;
-}
 
 .section_event {
     margin: auto;
