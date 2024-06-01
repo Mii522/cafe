@@ -275,6 +275,7 @@ main {
     transform: translateY(-50%);
     width: 45px;
     height: 45px;
+    cursor: pointer;
 }
 
 .prev-arrow {
@@ -285,6 +286,7 @@ main {
     z-index: 100;
     width: 45px;
     height: 45px;
+    cursor: pointer;
 }
 
 
@@ -374,8 +376,8 @@ iframe {
 }
 
 .DESIGN_CAFE {
-    font-size: 16px;
-    text-align: center;
+    width: 169px;
+    margin: auto;
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -482,12 +484,12 @@ html {
     }
 
     .title {
-        font-size: 85px;
+        font-size: 80px;
         letter-spacing: normal;
     }
 
     .semi-title2 {
-        font-size: 24px;
+        font-size: 21px;
     }
 
     .sp-semi-title2 {
@@ -611,6 +613,10 @@ html {
 
     .GALLERY {
         width: 142px;
+    }
+
+    .slider_gallery img {
+        width: 100%;
     }
 
     .next-arrow {
