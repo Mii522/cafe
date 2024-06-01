@@ -265,21 +265,26 @@ main {
 .slide-arrow {
     cursor: pointer;
     margin: auto;
-    width: 40px;
-    height: 40px;
     z-index: 100;
 }
 
-.slide-arrow next-arrow slick-arrow {
-    color: #fff;
+.next-arrow {
     position: absolute;
-    right: 420px;
+    right: 21.8%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
 }
 
-.slide-arrow prev-arrow slick-arrow {
-    color: #fff;
+.prev-arrow {
     position: absolute;
-    left: 420px;
+    left: 21.8%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    width: 45px;
+    height: 45px;
 }
 
 
@@ -607,6 +612,26 @@ html {
     .GALLERY {
         width: 142px;
     }
+
+    .next-arrow {
+        position: absolute;
+        right: 4.8%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 45px;
+        height: 45px;
+    }
+
+    .prev-arrow {
+        position: absolute;
+        left: 4.8%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+        width: 45px;
+        height: 45px;
+    }
+
 
     .section_event {
         margin-top: 34px;
